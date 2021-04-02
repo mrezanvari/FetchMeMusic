@@ -42,7 +42,7 @@ def on_progress(chunk, file_handler, bytes_remaining):
 
 def downloadUreadYoutubeEmails():
     try:
-        with MailBox('imap.gmail.com').login('mrezanvari@gmail.com', 'oxkkzzagimtpewyn') as mailbox:
+        with MailBox('imap.gmail.com').login('urmail@gmail.com', 'somePass!') as mailbox:
             print('\n\n******')
             for msg in mailbox.fetch(Q(seen=False), mark_seen=False):
                 if msg.from_ == 'noreply@youtube.com':
