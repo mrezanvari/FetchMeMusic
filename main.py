@@ -53,7 +53,7 @@ def downloadUreadYoutubeEmails():
 
                             yt = YouTube(lnk)
 
-                            if yt.title == 'YouTube': # Somethimes shit happens and the title doesnt load so read it from email text...
+                            if yt.title == 'YouTube': # Somethimes s*%t happens and the title doesnt load so read it from email text...
                                 title = msg.text.splitlines()[1]
                             else:
                                 title = yt.title
