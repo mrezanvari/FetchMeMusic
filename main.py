@@ -96,7 +96,7 @@ def downloadUreadYoutubeEmails():
                 strInput = input_with_timeout('\033[91m' + '\r\nWould You Like To Continue?! This will delete the email with error and continue... Y/N\r\n\r\n' + '\033[0m', 6)
                 if strInput.lower() == 'y':
                     print('\033[91m' + '\r\n\r\nDELETED!!!' + '\033[0m')
-                    with MailBox('imap.gmail.com').login('mrezanvari@gmail.com', 'oxkkzzagimtpewyn') as mailbox:
+                    with MailBox('imap.gmail.com').login('urmail@mail.com', 'somePass!') as mailbox:
                         MailBox.seen(mailbox, msg.uid, seen_val=True)
                         MailBox.delete(mailbox, msg.uid)
                         return 1
