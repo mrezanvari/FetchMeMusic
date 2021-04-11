@@ -87,7 +87,7 @@ def downloadUreadYoutubeEmails():
 
         if 'pytube' in str(ex.__class__):
             print('\033[91m' + '\r\n\r\nDELETED!!!' + '\033[0m')
-            with MailBox('imap.gmail.com').login('mrezanvari@gmail.com', 'oxkkzzagimtpewyn') as mailbox:
+            with MailBox('imap.gmail.com').login('urmail@mail.com', 'somePass!') as mailbox:
                 MailBox.seen(mailbox, msg.uid, seen_val = True)
                 MailBox.delete(mailbox, msg.uid)
         else:
@@ -106,7 +106,7 @@ def downloadUreadYoutubeEmails():
 
             except:
                 print('\033[91m' + 'input time out! I will continue but I wont delete the email that caused this...!' + '\033[0m' + '\r\n\r\n\r\n')
-                with MailBox('imap.gmail.com').login('mrezanvari@gmail.com', 'oxkkzzagimtpewyn') as mailbox:
+                with MailBox('imap.gmail.com').login('urmail@mail.com', 'somePass!') as mailbox:
                     MailBox.seen(mailbox, msg.uid, seen_val=True)
                     return 1
 
