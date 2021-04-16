@@ -1,5 +1,4 @@
 # FetchMeMusic
-Remember when youtube sent us emails everyday about the channels we were subscribed to?
-This script would automatically download the video from youtube and then remove the email form mailbox, keeping your mailbox clean...
+This script will check your email for youtube emails. If the emails are sent from specific channels, it will automatically download them to your desktop and deletes the corresponding email.
 
-well... it doesn't work anymore because youtube doesn't send emails anymore :(  
+NOTE: This scrip no loger works since youtube stopped sending notification emails so...
